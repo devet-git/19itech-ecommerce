@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+   <title>ECom</title>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="./events/scroll.js"></script>
+   <script src="./events/jquery-3.6.0.min.js"></script>
+   <script src="https://kit.fontawesome.com/9a9548dfa7.js" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="./styles/reset.css">
+   <link rel="stylesheet" href="./styles/navbar.css">
+   <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+   <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#"><img class="logo" src="./public/logo.png" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+               <a class="text-white nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Category
+               </a>
+               <div class="dropdown-menu dropdown-config" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="text-white nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Deals
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="text-white nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  What's new
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="text-white nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Pickup & Delivery
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item">
+               <form action="" class="search-form">
+                  <input type="search" name="search" placeholder="Search">
+                  <button class="search-btn"><i class="far fa-check-circle"></i></button>
+               </form>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="text-white nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="far fa-user-circle"></i>
+               </a>
+               <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item">
+               <a href="#" class="text-white"><i class="far fa-credit-card"></i></a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+   <main class="">
+      <section class="spring-fashion">
+         <img src="https://target.scene7.com/is/image/Target/Womens_SH_D2-220203-1643908207364?wid=2160&qlt=80&fmt=webp"
+            alt="">
+         <div class="spring-fashion__title">
+            <h1>Oh-So Spring</h1>
+            <p>Checkout what's new in women' dresses, swim and more</p>
+            <a href="#!">Women's New Arrivals</a>
+         </div>
+         <div class="spring-fashion__product row">
+            <div class="spring-fashion__product-item col-md-4">
+
+               <img
+                  src="https://media.istockphoto.com/photos/always-smile-picture-id1314415203?b=1&k=20&m=1314415203&s=170667a&w=0&h=_Oe7Mg-mUin-pgfRIrpoDrwS1rfXM0jvCrrx5CS7bxs="
+                  alt="">
+            </div>
+            <div class="spring-fashion__product-item col-md-4">
+               <img
+                  src="https://media.istockphoto.com/photos/front-view-of-beautiful-redhead-posing-outdoors-picture-id1303318740?k=20&m=1303318740&s=612x612&w=0&h=d9FFIp6c4zZGTn0cCH4Ki7i9Ke4_em6KyeYNc6C3sVA="
+                  alt="">
+            </div>
+            <div class="spring-fashion__product-item col-md-4">
+
+               <img
+                  src="https://media.istockphoto.com/photos/blank-mock-up-with-yellow-tshirt-isolated-on-white-background-picture-id1300884720?b=1&k=20&m=1300884720&s=170667a&w=0&h=rHhXY84kdsYu7IISeXPBuA0iB45oo508klNO0lCNQN8="
+                  alt="">
+            </div>
+
+         </div>
+      </section>
+      <section class="black-history-month">
+         <img src="https://target.scene7.com/is/image/Target/BHM_SH-D-1-211230-1640896147757?wid=2160&qlt=80&fmt=webp"
+            alt="">
+         <div class="title">
+            <h5>Shop the limited-time collection designed to celebrate & and share the culture</h5>
+            <a href="#!">Explore the collection</a>
+         </div>
+      </section>
+      <section class="new-and-now">
+         <h1 style="margin: 10px 0 20px;">New & Now</h1>
+         <div class="product-list row">
+            <div class="product col-md-4">
+               <img src="./public/tuQuanAo.jpg" alt="">
+               <div class="title">
+                  <h3>Storage & Organization</h3>
+                  <p>Smart storage solutions for every space.</p>
+               </div>
+            </div>
+            <div class="product col-md-4">
+               <img src="./public/chanMan.jpg" alt="">
+               <div class="title">
+                  <h3>Brand new bedding</h3>
+                  <p>Find refreshing styles to curl up in.</p>
+               </div>
+               <div class="sticky-cost">
+                  <span style="display: block;">From</span>
+                  <span class="dolar">$</span><span class="cost">35</span>
+               </div>
+            </div>
+            <div class="product col-md-4">
+               <img src="./public/gheMay.jpg" alt="">
+               <div class="title">
+                  <h3>Patio paradise</h3>
+                  <p>Find tons of fresh picks for your outdoor spaces.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="trending-items">
+         <button class="scroll-btn scroll-left-btn" id="scrollLeft">Prev</button>
+         <button class="scroll-btn scroll-right-btn" id="scrollRight" style="flex-flow: flex-end;">Next</button>
+         <div class="trending-items__list" id="hihi">
+            <h1 style="flex: 0 0 300px;">Trending items</h1>
+            <div class="trending-items__item">
+               <img
+                  src="https://target.scene7.com/is/image/Target/GUEST_ceb2d014-67bd-4e0d-91ae-a888fa220813?wid=175&hei=175&qlt=80&fmt=webp"
+                  alt="">
+               <p>$174.99</p>
+               <p>Reg: $249.99</p>
+               <p>Apple Airpods Pro</p>
+            </div>
+            <div class="trending-items__item">
+               <img
+                  src="https://target.scene7.com/is/image/Target/GUEST_c7c77bed-608c-402d-83c1-0fe945f3157b?wid=175&hei=175&qlt=80&fmt=webp"
+                  alt="">
+               <p>$174.99</p>
+               <p>Reg: $249.99</p>
+               <p>Apple Airpods Pro</p>
+            </div>
+            <div class="trending-items__item">
+               <img
+                  src="https://target.scene7.com/is/image/Target/GUEST_2aebaf7d-86db-4032-a3a0-1047fd2e27b3?wid=175&hei=175&qlt=80&fmt=webp"
+                  alt="">
+               <p>$174.99</p>
+               <p>Reg: $249.99</p>
+               <p>Apple Airpods Pro</p>
+            </div>
+            <div class="trending-items__item">
+               <img
+                  src="https://target.scene7.com/is/image/Target/GUEST_bec944a3-aff7-440e-a714-6930dc1725b0?wid=175&hei=175&qlt=80&fmt=webp"
+                  alt="">
+               <p>$174.99</p>
+               <p>Reg: $249.99</p>
+               <p>Apple Airpods Pro</p>
+            </div>
+            <div class="trending-items__item">
+               <img
+                  src="https://target.scene7.com/is/image/Target/GUEST_e36e05e1-7884-415d-9fae-53ceeb50e750?wid=175&hei=175&qlt=80&fmt=webp"
+                  alt="">
+               <p>$174.99</p>
+               <p>Reg: $249.99</p>
+               <p>Apple Airpods Pro</p>
+            </div>
+            <div class="trending-items__item">
+               <img
+                  src="https://target.scene7.com/is/image/Target/GUEST_ceb2d014-67bd-4e0d-91ae-a888fa220813?wid=175&hei=175&qlt=80&fmt=webp"
+                  alt="">
+               <p>$174.99</p>
+               <p>Reg: $249.99</p>
+               <p>Apple Airpods Pro</p>
+            </div>
+            <div class="trending-items__item">
+               <img
+                  src="https://target.scene7.com/is/image/Target/GUEST_ceb2d014-67bd-4e0d-91ae-a888fa220813?wid=175&hei=175&qlt=80&fmt=webp"
+                  alt="">
+               <p>$174.99</p>
+               <p>Reg: $249.99</p>
+               <p>Apple Airpods Pro</p>
+            </div>
+            <div class="trending-items__item">
+               <img
+                  src="https://target.scene7.com/is/image/Target/GUEST_ceb2d014-67bd-4e0d-91ae-a888fa220813?wid=175&hei=175&qlt=80&fmt=webp"
+                  alt="">
+               <p>$174.99</p>
+               <p>Reg: $249.99</p>
+               <p>Apple Airpods Pro</p>
+            </div>
+            <div class="trending-items__item">
+               <img
+                  src="https://target.scene7.com/is/image/Target/GUEST_ceb2d014-67bd-4e0d-91ae-a888fa220813?wid=175&hei=175&qlt=80&fmt=webp"
+                  alt="">
+               <p>$174.99</p>
+               <p>Reg: $249.99</p>
+               <p>Apple Airpods Pro</p>
+            </div>
+            <div class="trending-items__item">
+               <img
+                  src="https://target.scene7.com/is/image/Target/GUEST_2aebaf7d-86db-4032-a3a0-1047fd2e27b3?wid=175&hei=175&qlt=80&fmt=webp"
+                  alt="">
+               <p>$174.99</p>
+               <p>Reg: $249.99</p>
+               <p>Apple Airpods Pro</p>
+            </div>
+            <div class="trending-items__item">
+               <img
+                  src="https://target.scene7.com/is/image/Target/GUEST_ceb2d014-67bd-4e0d-91ae-a888fa220813?wid=175&hei=175&qlt=80&fmt=webp"
+                  alt="">
+               <p>$174.99</p>
+               <p>Reg: $249.99</p>
+               <p>Apple Airpods Pro</p>
+            </div>
+            <div class="trending-items__item">
+               <img
+                  src="https://target.scene7.com/is/image/Target/GUEST_bec944a3-aff7-440e-a714-6930dc1725b0?wid=175&hei=175&qlt=80&fmt=webp"
+                  alt="">
+               <p>$174.99</p>
+               <p>Reg: $249.99</p>
+               <p>Apple Airpods Pro</p>
+            </div>
+            <div class="trending-items__item">
+               <img
+                  src="https://target.scene7.com/is/image/Target/GUEST_ceb2d014-67bd-4e0d-91ae-a888fa220813?wid=175&hei=175&qlt=80&fmt=webp"
+                  alt="">
+               <p>$174.99</p>
+               <p>Reg: $249.99</p>
+               <p>Apple Airpods Pro</p>
+            </div>
+         </div>
+      </section>
+      <section class="featured-categories" style="text-align: center;">
+         <h2 style="margin: 10px 0 30px">Featured categories</h2>
+         <div class="row">
+            <div class="col-md-2 col-sm-3 col-3">
+               <img
+                  src="https://target.scene7.com/is/image/Target/Easter_CB-220114-1642199640630?wid=315&hei=315&qlt=60&fmt=webp"
+                  alt="">
+               <p>Easter</p>
+            </div>
+            <div class="col-md-2 col-sm-3 col-3">
+               <img
+                  src="https://target.scene7.com/is/image/Target/Womens-210913-1631564031377?wid=315&hei=315&qlt=60&fmt=webp"
+                  alt="">
+               <p>Women's</p>
+
+            </div>
+            <div class="col-md-2 col-sm-3 col-3"><img
+                  src="https://target.scene7.com/is/image/Target/Mens-210913-1631564040323?wid=315&hei=315&qlt=60&fmt=webp"
+                  alt="">
+               <p>Man's</p>
+            </div>
+            <div class="col-md-2 col-sm-3 col-3">
+               <img
+                  src="https://target.scene7.com/is/image/Target/Kids-210913-1631564048734?wid=315&hei=315&qlt=60&fmt=webp"
+                  alt="">
+               <p>Kid's</p>
+            </div>
+            <div class="col-md-2 col-sm-3 col-3">
+               <img
+                  src="https://target.scene7.com/is/image/Target/Baby-210913-1631564062108?wid=315&hei=315&qlt=60&fmt=webp"
+                  alt="">
+               <p>Baby</p>
+            </div>
+            <div class="col-md-2 col-sm-3 col-3"><img
+                  src="https://target.scene7.com/is/image/Target/Furniture-210913-1631566212856?wid=315&hei=315&qlt=60&fmt=webp"
+                  alt="">
+               <p>Home</p>
+            </div>
+            <div class="col-md-2 col-sm-3 col-3"><img
+                  src="https://target.scene7.com/is/image/Target/PatioGarden-210913-1631564082284?wid=315&hei=315&qlt=60&fmt=webp"
+                  alt="">
+               <p>Patio & Garden</p>
+            </div>
+            <div class="col-md-2 col-sm-3 col-3"><img
+                  src="https://target.scene7.com/is/image/Target/KitchenDining-210913-1631564122569?wid=315&hei=315&qlt=60&fmt=webp"
+                  alt="">
+               <p>Kitchen & Dining</p>
+            </div>
+            <div class="col-md-2 col-sm-3 col-3"><img
+                  src="https://target.scene7.com/is/image/Target/Beauty181103-190722_1563828945271?wid=315&hei=315&qlt=60&fmt=webp"
+                  alt="">
+               <p>Beauty</p>
+            </div>
+            <div class="col-md-2 col-sm-3 col-3"><img
+                  src="https://target.scene7.com/is/image/Target/Electronics219475-200305_1583423525490?wid=315&hei=315&qlt=60&fmt=webp"
+                  alt="">
+               <p>Electronics</p>
+            </div>
+            <div class="col-md-2 col-sm-3 col-3"><img
+                  src="https://target.scene7.com/is/image/Target/Sept_Wk5-0930-Video_Games-Nintendo-CB-Consoles143381-180910_1536591280324?wid=315&hei=315&qlt=60&fmt=webp"
+                  alt="">
+               <p>Video games</p>
+            </div>
+            <div class="col-md-2 col-sm-3 col-3"><img
+                  src="https://target.scene7.com/is/image/Target/Toys219475-200305_1583423532760?wid=315&hei=315&qlt=60&fmt=webp"
+                  alt="">
+               <p>Toys</p>
+            </div>
+            <div class="col-md-2 col-sm-3 col-3"><img
+                  src="https://target.scene7.com/is/image/Target/Sports_Outdoors219475-200305_1583425943604?wid=315&hei=315&qlt=60&fmt=webp"
+                  alt="">
+               <p>Sport & outdoors</p>
+            </div>
+            <div class="col-md-2 col-sm-3 col-3"><img
+                  src="https://target.scene7.com/is/image/Target/Grocery219475-200305_1583423555572?wid=315&hei=315&qlt=60&fmt=webp"
+                  alt="">
+               <p>Grocery</p>
+            </div>
+            <div class="col-md-2 col-sm-3 col-3"><img
+                  src="https://target.scene7.com/is/image/Target/HouseholdEssentials_Tide-200519-1589915606672?wid=315&hei=315&qlt=60&fmt=webp"
+                  alt="">
+               <p>Household Essentials</p>
+            </div>
+            <div class="col-md-2 col-sm-3 col-3"><img
+                  src="https://target.scene7.com/is/image/Target/Pets219475-200305_1583423545822?wid=315&hei=315&qlt=60&fmt=webp"
+                  alt="">
+               <p>Pets</p>
+            </div>
+            <div class="col-md-2 col-sm-3 col-3"><img
+                  src="https://target.scene7.com/is/image/Target/CatNav_EvergreenGifting-200831-1598899914929?wid=315&hei=315&qlt=60&fmt=webp"
+                  alt="">
+               <p>Gif Ideas</p>
+            </div>
+            <div class="col-md-2 col-sm-3 col-3"><img
+                  src="https://target.scene7.com/is/image/Target/clearance97188-171020_1508525411214?wid=315&hei=315&qlt=60&fmt=webp"
+                  alt="">
+               <p>Cleanrance</p>
+            </div>
+         </div>
+      </section>
+      <section class="commitments">
+         <h2>Our corpotate commitments</h2>
+         <div class="commitment-list row">
+            <div class="commitment col-md-4">
+               <div class='commitment-content'>
+                  <h3>COVID-19 vaccines now available</h3>
+                  <p>
+                     Make an appointment for your free vaccine through CVS Pharmacy at Target. No cost with insurance or
+                     through a federal program for the uninsured.
+                  </p>
+               </div>
+            </div>
+            <div class=" commitment col-md-4">
+               <div class='commitment-content'>
+                  <h3>Target forward</h3>
+                  <p>
+                     Let’s move toward a more equitable & regenerative future together. Explore our sustainability
+                     strategy.
+                  </p>
+               </div>
+            </div>
+            <div class=" commitment col-md-4">
+               <div class='commitment-content'>
+                  <h3>Our commitments</h3>
+                  <p>
+                     Learn about our commitments to ethics, our team, our communities & more.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="signup">
+         <span style="font-weight: bold;">Get top deals, latest trends, and more.</span>
+         <form action="">
+            <input type="text" placeholder="email">
+            <button>Sign up</button>
+         </form>
+         <a href="#">Policy</a>
+         <p style="font-size: 12px;">
+            <a href="#">
+               <span style="font-weight: bold;">*See offer details.</span> Restrictions apply. Pricing, promotions and
+               availability may vary by location and at Target.com
+            </a>
+         </p>
+      </section>
+   </main>
+   <footer class="row">
+      <div class="col-sm-3 col-6">
+         <h5>About Target</h5>
+         <a href="#">Career</a>
+         <a href="#">Email signup</a>
+         <a href="#">New & Blog</a>
+         <a href="#">Target brand</a>
+         <a href="#">Pressroom</a>
+      </div>
+      <div class="col-sm-3 col-6">
+         <h5>Help</h5>
+         <a href="#">Target help</a>
+         <a href="#">Returns</a>
+         <a href="#">Track order</a>
+         <a href="#">Recalls</a>
+      </div>
+      <div class="col-sm-3 col-6">
+         <h5>Stores</h5>
+         <a href="#">Find a store</a>
+         <a href="#">Clinic</a>
+         <a href="#">Pharmacy</a>
+      </div>
+      <div class="col-sm-3 col-6">
+         <h5>Services</h5>
+         <a href="#">Target circle</a>
+         <a href="#">RedCard</a>
+         <a href="#">Registry</a>
+         <a href="#">Target App</a>
+         <a href="#">Same day delivery</a>
+      </div>
+      <div class="col-md-12 image">
+         <img src="https://target.scene7.com/is/content/Target/GUEST_ca8f1d56-9000-4407-be78-2c33be983dab" alt="">
+      </div>
+      <div class="col-12 other row">
+         <div class="other__social col-sm-4 col-12">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+         </div>
+         <div class="other__privacy col-sm-8 col-12">
+            <a href="#">Term</a>
+            <a href="#">CA Supply Chain</a>
+            <a href="#">Privacy</a>
+            <a href="#">CA Supply Chain</a>
+            <a href="#">Internet-Based Ads</a>
+            <a href="#">Don't sell my peresonnal info</a>
+            <!-- <a>&copy;2022 Target Brands, Inc.</a> -->
+         </div>
+      </div>
+   </footer>
+   <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+</body>
+
+</html>

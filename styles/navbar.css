@@ -1,0 +1,35 @@
+nav {
+   background-color: #cc0000 !important;
+   font-size: 20px;
+   font-weight: bold;
+}
+
+.logo {
+   width: 50px;
+}
+.search-form {
+   background-color: white;
+   /* padding: 5px; */
+   border-radius: 100px;
+   overflow: hidden;
+}
+.search-form input,
+.search-form button {
+   border: none;
+   outline: none;
+}
+.search-form input {
+   padding-left: 10px;
+   font-size: 17px;
+}
+
+.dropdown-menu:after {
+   position: absolute;
+   content: "";
+   /* height: 10px; */
+   top: -10px;
+   left: 30px;
+   border-bottom: 10px solid white;
+   border-right: 10px solid transparent;
+   border-left: 10px solid transparent;
+}
