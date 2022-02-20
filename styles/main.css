@@ -1,0 +1,246 @@
+:root {
+   --red: #cc0000;
+   --gray: #f7f7f7;
+}
+main {
+   padding: 0 50px;
+}
+@media screen and (max-width: 576px) {
+   main {
+      padding: 0 10px;
+   }
+}
+.spring-fashion {
+   width: 100%;
+   position: relative;
+   text-align: left;
+}
+.spring-fashion img {
+   width: 100%;
+}
+.spring-fashion__title {
+   position: absolute;
+   top: 0px;
+   left: 20px;
+   width: 25%;
+   font-size: 20px;
+}
+.spring-fashion__title h1 {
+   color: rgb(31, 101, 192);
+   font-size: 6vw;
+   font-weight: bold;
+}
+.spring-fashion__title p {
+   /* color: rgb(31, 101, 192); */
+   font-size: 2vw;
+   font-weight: bold;
+}
+.spring-fashion__title a {
+   background-color: white;
+   color: black;
+   padding: 1%;
+   border: 1px solid;
+   border-radius: 4px;
+   font-size: 2vw;
+}
+.spring-fashion__product {
+   background-color: #eaedf3;
+   padding: 10px;
+   /* display: flex; */
+   justify-content: space-around;
+}
+.spring-fashion__product-item {
+   padding: 10px;
+   /* background-color: white; */
+   /* width: 25%; */
+}
+/* ======================================================================== */
+.black-history-month {
+   padding-top: 100px;
+   position: relative;
+}
+.black-history-month .title {
+   font-size: 20px;
+   width: 40%;
+   position: absolute;
+   bottom: 1%;
+   left: 2%;
+   color: white;
+   text-align: center;
+}
+.black-history-month .title h5 {
+   font-size: 2vw;
+}
+
+.black-history-month .title a {
+   background-color: red;
+   padding: 1% 2%;
+   color: white;
+   border-radius: 5px;
+   margin-top: 1%;
+   display: inline-block;
+   font-size: 2vw;
+}
+/* ========================================================================= */
+.new-and-now {
+   background-color: bisque;
+   padding: 10px;
+   margin-top: 40px;
+   text-align: center;
+}
+.new-and-now .product-list {
+   width: 100%;
+}
+.new-and-now .product {
+   position: relative;
+}
+.new-and-now .product .title {
+   margin-top: 20px;
+}
+.new-and-now .sticky-cost {
+   position: absolute;
+   top: 0;
+   left: 30px;
+   padding: 10px 20px;
+   background-color: #5c6c86;
+   text-align: left;
+   color: white;
+   font-weight: bold;
+   font-size: 25px;
+}
+.new-and-now .sticky-cost .dolar {
+   font-size: 40px;
+   padding-bottom: 5px;
+}
+.new-and-now .sticky-cost .cost {
+   font-size: 50px;
+}
+/* ================================================================ */
+.trending-items {
+   background-color: var(--gray);
+   margin: 20px 0 0;
+   position: relative;
+   padding: 5px;
+}
+.trending-items__list {
+   display: flex;
+   gap: 10px;
+   overflow-x: auto;
+   align-items: center;
+   text-align: center;
+   padding: 10px;
+}
+.trending-items__list::-webkit-scrollbar {
+   display: none;
+}
+.trending-items .scroll-btn {
+   position: absolute;
+   background-color: #e5e5e5;
+   padding: 5px 10px;
+   border-radius: 5px;
+   display: none;
+}
+.trending-items .scroll-right-btn {
+   right: 5px;
+}
+.trending-items:hover .scroll-btn {
+   display: block;
+}
+
+.trending-items__item {
+   flex: 0 0 175px;
+   background-color: white;
+   padding: 5px;
+   border-radius: 3px;
+}
+.trending-items p {
+   margin: 0;
+}
+/* ================================================================ */
+.featured-categories {
+   text-align: center;
+   padding: 20px 0;
+}
+/* ================================================================ */
+.commitments {
+   background-color: #f7f7f7;
+   text-align: center;
+   padding: 20px 0;
+}
+.commitment-list {
+   padding: 0 15px;
+}
+.commitment-list .commitment {
+   padding: 15px;
+   color: white;
+}
+.commitment-content {
+   background-color: var(--red);
+   padding: 10px;
+   vertical-align: middle;
+   height: 200px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+/* ================================================================ */
+.signup {
+   padding: 60px 0 30px;
+   text-align: center;
+}
+.signup form {
+   display: inline;
+}
+.signup input {
+   padding: 5px;
+   margin-left: 10px;
+}
+.signup input::before {
+   content: "hihi";
+}
+.signup button {
+   padding: 5px;
+   margin: 0 10px;
+   background-color: #cc0000;
+   color: white;
+   border-radius: 5px;
+   font-size: 17px;
+}
+.signup p {
+   margin-top: 40px;
+}
+/* ================================================================ */
+footer {
+   background-color: #f5f5f5;
+   padding-top: 15px;
+}
+footer a {
+   display: block;
+   padding: 5px 0;
+   width: fit-content;
+}
+footer .image {
+   padding: 0 30%;
+}
+footer .other {
+   background-color: #333333;
+   padding: 20px 0;
+}
+footer .other a {
+   color: white;
+   padding: 0 5px;
+}
+footer .other__social {
+   display: flex;
+   justify-content: space-around;
+}
+footer .other__social a {
+   font-size: 22px;
+}
+footer .other__privacy {
+   text-align: center;
+}
+footer .other__privacy a {
+   font-size: 14px;
+   display: inline-block;
+}
