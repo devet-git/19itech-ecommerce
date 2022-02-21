@@ -2,6 +2,8 @@ nav {
    background-color: #cc0000 !important;
    font-size: 20px;
    font-weight: bold;
+   display: flex;
+   align-items: center;
 }
 
 .logo {
@@ -9,20 +11,27 @@ nav {
 }
 .search-form {
    background-color: white;
-   /* padding: 5px; */
+   /* padding: 4px;  */
    border-radius: 100px;
    overflow: hidden;
+   margin: 0px 20px;
 }
 .search-form input,
-.search-form button {
+.search-form .search-btn {
    border: none;
    outline: none;
 }
+.search-form .search-btn {
+   padding: 7px 10px;
+}
 .search-form input {
+   width: 420px;
    padding-left: 10px;
    font-size: 17px;
 }
-
+.user {
+   font-size: 1.5rem;
+}
 .dropdown-menu:after {
    position: absolute;
    content: "";

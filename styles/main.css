@@ -43,16 +43,16 @@ main {
    border-radius: 4px;
    font-size: 2vw;
 }
+.spring-fashion__title a:hover{
+   text-decoration: none;
+}
 .spring-fashion__product {
    background-color: #eaedf3;
    padding: 10px;
-   /* display: flex; */
    justify-content: space-around;
 }
 .spring-fashion__product-item {
    padding: 10px;
-   /* background-color: white; */
-   /* width: 25%; */
 }
 /* ======================================================================== */
 .black-history-month {

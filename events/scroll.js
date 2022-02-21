@@ -2,7 +2,6 @@ $(document).ready(function () {
    let scrollWidth = 175 * 4;
    let elmMaxWidth = $('#hihi')[0].scrollWidth;
    let scrollPosition = 0;
-   console.log($('#hihi')[0].scrollWidth);
    $('#scrollRight').on('click', function () {
       if (scrollPosition === 0) {
          scrollPosition = scrollWidth;
