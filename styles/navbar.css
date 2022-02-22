@@ -15,6 +15,8 @@ nav {
    border-radius: 100px;
    overflow: hidden;
    margin: 0px 20px;
+   display: flex;
+   /* width: 100%; */
 }
 .search-form input,
 .search-form .search-btn {
@@ -25,7 +27,8 @@ nav {
    padding: 7px 10px;
 }
 .search-form input {
-   width: 420px;
+   /* background-color: red; */
+   width: 100%;
    padding-left: 10px;
    font-size: 17px;
 }
@@ -41,4 +44,65 @@ nav {
    border-bottom: 10px solid white;
    border-right: 10px solid transparent;
    border-left: 10px solid transparent;
+}
+
+@media only screen and (max-width: 768px) {
+   .none-to768 {
+      display: none;
+   }
+}
+@media only screen and (max-width: 768px) {
+   .show-to768 {
+      display: block;
+   }
+}
+@media only screen and (min-width: 768px) {
+   .show-from768 {
+      display: block;
+   }
+}
+@media only screen and (min-width: 768px) {
+   .none-from768 {
+      display: none;
+   }
+}
+@media only screen and (min-width: 992px) {
+   .show-from992 {
+      display: block;
+   }
+}
+@media only screen and (min-width: 992px) {
+   .none-from992 {
+      display: none;
+   }
+}
+@media only screen and (max-width: 992px) {
+   .show-to992 {
+      display: block;
+   }
+}
+@media only screen and (max-width: 992px) {
+   .none-to992 {
+      display: none;
+   }
+}
+@media only screen and (min-width: 1200px) {
+   .show-from1200 {
+      display: block;
+   }
+}
+@media only screen and (min-width: 1200px) {
+   .none-from1200 {
+      display: none;
+   }
+}
+@media only screen and (max-width: 1200px) {
+   .show-to1200 {
+      display: block;
+   }
+}
+@media only screen and (max-width: 1200px) {
+   .none-to1200 {
+      display: none;
+   }
 }
